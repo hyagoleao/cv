@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currículo - Hyago Talvani Soares Leão Ribeiro - Full Stack Developer</title>
+	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<style>
+	body {
+		background: gray;
+		color: white;
+	}
+
+	page {
+		background: white;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 0.5cm;
+		box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+		color: #57585a;
+		/* word-break: normal;
+		white-space: pre-line; */
+	}
+
+	@media only screen and (min-width: 719px) {
+		page[size="A4"] {
+			width: 25cm;
+			height: 28.7cm;
+			font-size: 14px;
+		}
+	}
+
+	
+	@media print {
+		::first-letter {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container-fluid {
+			padding: 0 !important;
+			margin: 0 !important;
+			width: 100% !important;
+			max-width: none !important;
+			min-width: unset !important;
+		}
+
+		@page {
+			size: 10in 11.8in;
+			font-size: 50px;
+			margin: 0in;
+			font-size: 2em;
+		}
+	
+
+	.container-fluid,
+	.col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11 {
+		/* border: 1px solid red; */
+		background-color: #57585a;
+		color: white;
+	}
+
+	.top-content {
+		display: block;
+	}
+
+	.subtitle {
+		border-top: 5px solid #feca0a;
+	}
+
+	.profile {
+		
+		border: 5px solid #feca0a;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+		max-width: 50px;
+		max-width: 100%;
+		height: auto;
+
+	}
+
+	.line-top {
+		border-top: 8px solid #feca0a;
+	}
+
+	.line-top-row {
+		border-top: 5px solid #e6e7e9;
+		background-color: #e6e7e9;
+	}
+
+	.range-list {
+		width: 100%;
+	}
+
+
+	.gray {
+		background-color: #e6e7e9;
+		color: #57585a;
+		font-weight: bold;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.white .col-sm-9 {
+		background-color: white;
+		color: #57585a;
+	}
+
+	.white h3,
+	.white h5,
+	.white h6 {
+		font-weight: bold;
+	}
+
+	.icon-resume {
+		color: red;
+		fill: green !important;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.fas {
+		font-size: 20px;
+		background-color: gray;
+		color: white;
+		border-radius: 30px;
+		padding: 15px;
+		margin: 10px;
+	}
+
+	.form-label {
+		font-weight: bold;
+	}
+
+	.skills {
+		background-color: #feca0a;
+		padding: 0;
+
+	}
+
+	.tech-skills {
+		background-color: #57585a;
+		width: 100%;
+		padding: 1em;
+
+	}
+
+	.contact {
+		text-align: center;
+	}
+
+	.contact .contact-title {
+		background-color: black;
+		color: #FFF;
+		border: none;
+		height: 30px;
+		line-height: 30px;
+		margin-top: -15px;
+		padding: 0 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		cursor: pointer;
+		border-radius: 30px;
+
+	}
+
+	.contact-body {
+		margin-top: -15px;
+		color: black;
+		font-weight: bold;
+		font-size: 13px;
+	}
+
+
+	/** Range */
+	input[type='range'] {
+		cursor: pointer;
+	}
+
+</style>
+<body>
+	<page size="A4">
+		<div class="container-fluid">
+			<div class="row align-items-center">
+				<div class="col-sm-3 ">
+					<img src="hyago.jpeg" class="profile" alt="Evaldo Borba Maciel">
+				</div>
+				<div class="col-sm-9">
+					<h1 id="nome" name="nome">Hyago Talvani Soares Leão Ribeiro</h1>
+					<h5>Full Stack Developer</h5>
+					<h3 class="subtitle">Sobre mim</h3>
+					<p>
+						Cursando  Analise e Desenvolvimento de Sistemas pela
+						IESB.
+						Comecei a programar em PHP em 2021, criando projetos pessoais,
+						em 2022 consegui meu primeiro emprego na área.
+						Na faculdade estudei Python. Hoje trabalho com JavaScript, jQuery,
+					    PHP, Laravel, Bootstrap, MySQL
+				</div>
+			</div>
+			<div class="row line-top">
+				<div class="col-sm-3 range-list-top skills">
+					<div class="tech-skills">
+						<h5>Conhecimento</h5>
+						<p>
+							<label for="customRange1" class="form-label">JavaScript</label>
+							<input type="range" class="range-list" min="0" max="100" value="30" readonly />
+
+							<label for="customRange1" class="form-label">React </label>
+							<input type="range" class="range-list" min="0" max="100" value="30" />
+
+							<label for="customRange1" class="form-label">POO PHP </label>
+							<input type="range" class="range-list" min="0" max="100" value="75" />
+
+							<label for="customRange1" class="form-label">Linux Server</label>
+							<input type="range" class="range-list" min="0" max="100" value="25" />
+
+							<label for="customRange1" class="form-label">MySQL</label>
+							<input type="range" class="range-list" min="0" max="100" value="40" />
+
+							<label for="customRange1" class="form-label">NoSQL</label>
+							<input type="range" class="range-list" min="0" max="100" value="10" />
+
+							<label for="customRange1" class="form-label">Totvs RM</label>
+							<input type="range" class="range-list" min="0" max="100" value="30" />
+
+							<label for="customRange1" class="form-label">Fluig</label>
+							<input type="range" class="range-list" min="0" max="100" value="50" />
+
+							<label for="customRange1" class="form-label">UML</label>
+							<input type="range" class="range-list" min="0" max="100" value="20" />
+						</p>
+					</div>
+
+					<div class="tech-skills">
+						<h5>Idiomas</h5>
+						<p>
+							<label for="customRange1" class="form-label">Português</label>
+							<input type="range" class="range-list" min="0" max="100" value="95" />
+
+							<label for="customRange1" class="form-label">Inglês</label>
+							<input type="range" class="range-list" min="0" max="100" value="45" />
+						</p>
+					</div>
+
+					<div class="row  contact ">
+						<div class="col-md-12 ">
+							<p class="contact-title">Contato</p>
+							<p class="contact-body">
+								<br />+55 61 99437-7684
+								<br />hyagoleao1@gmail.com
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-9 white top-content">
+					<div class="row line-top-row  align-items-center">
+						<div class="col-sm-3 gray ">
+							<span class="align-middle">
+								<i class="fas fa-briefcase"></i>
+							</span>
+						</div>
+						<div class="col-sm-9">
+							<h3>Experiência Profissional</h3>
+						</div>
+					</div>
+
+					<div class="row line-top-row">
+						<div class="col-sm-3 gray">2022 - 2022</div>
+						<div class="col-sm-9">
+							<h5>Analista de Sistemas</h5>
+							<h6>FIT Gestão / Inventivo.Digital</h6>
+							<p>
+								Desenvolvimento de novos sistemas em ambiente Fluig, BPM, ECM e GED. Integrações SOAP e RESTful. 
+								Desenvolvimento de web services para integrações dos diferentes sistemas desenvolvidos pela TOTVS. 
+								Full Stack Developer atuando em projetos utilizando PHP, JavaScript. Sustentação, implantação, suporte, customização do Sistema de ERP Totvs Corpore RM.
+							</p>
+						</div>
+					</div>
+					<div class="row line-top-row">
+						<div class="col-sm-3 gray">2022 - 2022</div>
+						<div class="col-sm-9">
+							<h5>SAC - Desenvolvimento Front-end</h5>
+							<h6>Grupo NT</h6>
+							<p>
+								Responsável por atender demandas do SAC N1 e N2. Passando 1 mês fui transferido para área de desenvolvimento front-end, dando manutenção em componentes criados por jQuery.
+							</p>
+						</div>
+					</div>
+
+					<div class="row line-top-row  align-items-center">
+						<div class="col-sm-3 gray ">
+							<span class="align-middle">
+								<i class="fas fa-graduation-cap"></i>
+							</span>
+						</div>
+						<div class="col-sm-9">
+							<h3>Formação </h3>
+						</div>
+					</div>
+
+					<div class="row line-top-row">
+						<div class="col-sm-3 gray">2021 - 2023</div>
+						<div class="col-sm-9">
+							<h5>Análise e desenvolvimento de sistemas (Andamento)</h5>
+							<h6>IESB</h6>
+							<p>
+								Este curso visa formar analista de sistemas. No decorrer dos estudos 
+								desenvolvemos habilidades voltadas para a gestão e execução de projetos com 
+								foco e metologias ágeis (Scrum, Kanban e Manifesto Ágil) e logica de programação, infraestrutura.
+		
+							</p>
+						</div>
+					</div>
+
+					<div class="row line-top-row  align-items-center">
+						<div class="col-sm-3 gray ">
+							<span class="align-middle">
+								<i class="fas fa-trophy"></i>
+							</span>
+						</div>
+						<div class="col-sm-9">
+							<h3>Certificações</h3>
+						</div>
+					</div>
+
+					<div class="row line-top-row">
+						<div class="col-sm-3 gray"></div>
+						<div class="col-sm-9">
+							<p>
+								Fluig - BPM-ECM Essentials, Intermediate, Advanced
+								<br />Fluig - Integração Fluig x RM
+								<br />Totvs - LGPD
+								<br />Totvs - MIT
+								<br />Gestão de Processos - BPM
+								<br />GoodData
+								<br />PHP
+								<br />PHP MVC
+								<br />POO PHP
+								<br />Criando REST API com Laravel 8
+								<br />Desenvolvimento avanaçdo PHP/Laravel/VUE.js
+								<br />Desenvolvimento C#
+								<br />HTML E CSS
+							</p>
+							<p>
+								<h6>Mais informações</h6>
+								<a href="https://www.linkedin.com/in/hyagoleao/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/hyagoleao/</a>
+								<br/><a href="https://github.com/hyagoleao" target="_blank" rel="noopener noreferrer">https://github.com/hyagoleao</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</page>
+</body>
+<script src="bootstrap/bootstrap.min.js"></script>
+<script>window.addEventListener("load", function () { });</script>
+</html>
